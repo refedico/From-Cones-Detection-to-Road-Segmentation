@@ -31,64 +31,49 @@ opencv-python
 numpy
 ```
 
-### Descrizione dei Moduli
+## Project Structure
 
-- **torch**: Libreria per il calcolo scientifico e il deep learning.
-- **ultralytics**: Fornisce supporto per i modelli YOLO di ultima generazione.
-- **Pillow**: Utilizzata per l'elaborazione di immagini (modifica, apertura, salvataggio).
-- **opencv-python**: Utilizzata per l'elaborazione di immagini e video.
-- **numpy**: Libreria per l'elaborazione numerica e il calcolo matematico.
-
-## Struttura del Progetto
-La struttura del progetto è organizzata come segue:
-
+The project structure is organized as follows:
 ```
-.
-├── convertions/             # Moduli per la gestione delle conversioni
-│   └── mask_convertion.py   # Script per la conversione delle maschere
-├── documentation/           # File relativi alla documentazione
-│   └── doc.html             # Documentazione HTML del progetto
-├── models/                  # Directory per i modelli
-│   └── yolo.pt              # Modello YOLO pre-addestrato
-├── README.md                # Documentazione principale del progetto
-├── configmodel.yaml         # File di configurazione del modello
-├── detector.py              # Script per il rilevamento
-├── requirements.txt         # Elenco delle dipendenze
-├── seg_model.py             # Script per il modello di segmentazione
+.  
+├── convertions/             # Modules for handling conversions  
+│   └── mask_convertion.py 
+│   └── conv2yolo.py.py 
+│   └── converter.py 
+├── documentation/           # Documentation-related files  
+│   └── doc.html              
+├── models/                  # Directory for models  
+│   └── yolo.pt             
+├── README.md                 
+├── configmodel.yaml         # Configuration file for the model  
+├── detector.py              # MAIN Script for object detection (TO START) 
+├── requirements.txt   
+├── seg_model.py             # Training segmentation model  
 ```
 
-### Descrizione dei File Principali
-
-- **convertions/mask_convertion.py**: Contiene funzioni per la conversione e manipolazione delle maschere.
-- **documentation/doc.html**: File HTML per la documentazione dettagliata del progetto.
-- **models/yolo.pt**: Modello YOLO pre-addestrato per il rilevamento degli oggetti.
-- **configmodel.yaml**: File di configurazione per specificare i parametri del modello.
-- **detector.py**: Script principale per il rilevamento degli oggetti.
-- **seg_model.py**: Script per la segmentazione delle immagini.
-
-## Come Eseguire
-1. Clona o scarica il repository del progetto:
+## How to Run
+1. Clone or download the project repository:
 
    ```bash
    git clone <url-del-repository>
    cd <nome-cartella>
    ```
 
-2. Installa le dipendenze:
+2. Install the dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Avvia lo script principale:
+3. Run the main script:
 
    ```bash
    python detector.py
    ```
 
-## Note
-- Assicurati che il tuo ambiente supporti GPU (opzionale ma raccomandato per l'uso con modelli YOLO).
-- Verifica di avere i permessi per accedere ai file nella directory `data/` e scrivere in `outputs/`.
+## Notes
+- Ensure that your environment supports GPU (optional but recommended for using YOLO models).
+- Verify that you have the necessary permissions to access files in the data/ directory and to write to the outputs/ directory.
 
-## Supporto
-Se riscontri problemi, contatta il manutentore del progetto o apri una segnalazione nel repository GitHub.
+## Support
+If you encounter any issues, contact the project maintainer or open an issue on the GitHub repository.
