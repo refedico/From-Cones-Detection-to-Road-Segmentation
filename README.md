@@ -55,8 +55,8 @@ The project structure is organized as follows:
 1. Clone or download the project repository:
 
    ```bash
-   git clone <url-del-repository>
-   cd <nome-cartella>
+   git clone https://github.com/refedico/From-Cones-Detection-to-Road-Segmentation
+   cd From-Cones-Detection-to-Road-Segmentation
    ```
 
 2. Install the dependencies:
