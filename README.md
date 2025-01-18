@@ -2,7 +2,7 @@
 
 ## Description
 
-This project was developed for the Autonomous Driving and Adas Technologies course at the University of Parma, in collaboration with my colleague Leonardo Zanella. The two objectives are the identification of cones along the road of Formula SAE competitions and the identification through segmentation of the road that can actually be driven. Initially, after the first detection, it was thought to use a deterministic algorithm to identify the lines and the center of the road to drive the car accordingly. It was subsequently used to generate ground truth for training the real-time semantic segmentation model that will run on the car.
+This project was developed for the [Autonomous Driving and Adas Technologies course]([https://www.google.com](https://corsi.unipr.it/en/ugov/degreecourse/225616)) at the University of Parma, in collaboration with my colleague Leonardo Zanella. The two objectives are the identification of cones along the road of Formula SAE competitions and the identification through segmentation of the road that can actually be driven. Initially, after the first detection, it was thought to use a deterministic algorithm to identify the lines and the center of the road to drive the car accordingly. It was subsequently used to generate ground truth for training the real-time semantic segmentation model that will run on the car.
 
 ## System Requirements
 
